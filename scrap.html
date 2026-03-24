@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="scrap-page">
+    <canvas id="particles"></canvas>
+    <div class="scrap-header">
+        <h1>A trip to Memory Lane</h1>
+    </div>
+    <div class="carousel-container-fullscreen">
+        <div class="carousel-fullscreen">
+            <div class="carousel-images-fullscreen" id="carouselImages">
+                <div class="carousel-slide" data-caption="Our first photo together">
+                    <img src="anniv/1.JPG" alt="Memory 1">
+                </div>
+                <div class="carousel-slide" data-caption="Your first time sa amoa">
+                    <img src="anniv/2.JPG" alt="Memory 2">
+                </div>
+                <div class="carousel-slide" data-caption="First bus ride together">
+                    <img src="anniv/3.JPG" alt="Memory 3">
+                </div>
+                <div class="carousel-slide" data-caption="First time getting card w/ u">
+                    <img src="anniv/4.JPG" alt="Memory 4">
+                </div>
+                <div class="carousel-slide" data-caption="First time gi sundo nimo">
+                    <img src="anniv/5.JPG" alt="Memory 5">
+                </div>
+                <div class="carousel-slide" data-caption="Just a cute kissy photo">
+                    <img src="anniv/6.JPG" alt="Memory 6">
+                </div><div class="carousel-slide" data-caption="First time(kinda) playing with ur hair">
+                    <img src="anniv/7.JPG" alt="Memory 7">
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+    <script src="carousel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
